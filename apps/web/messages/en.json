@@ -1,7 +1,39 @@
 {
-  "scaffold": {
-    "eyebrow": "Palmiye Nature",
-    "title": "Website foundation is ready.",
-    "description": "This temporary page confirms that the localized route structure is working."
+  "common": {
+    "siteName": "Palmiye Nature Hotel & Yacht Club",
+    "siteEyebrow": "Boutique hotel and marina atmosphere",
+    "siteIntro": "Palmiye Nature Hotel & Yacht Club brings together a calm stay close to nature with a marina atmosphere.",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us",
+    "viewRooms": "View Rooms",
+    "viewGallery": "View Gallery",
+    "seeLocation": "See Location"
+  },
+  "navigation": {
+    "primary": "Primary navigation",
+    "home": "Home",
+    "rooms": "Rooms",
+    "restaurant": "Restaurant",
+    "marina": "Marina",
+    "poolBar": "Pool Bar",
+    "rooftopTerrace": "Rooftop Terrace",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "brand": "Palmiye Nature Hotel & Yacht Club",
+    "description": "A multilingual promotional site focused on nature, marina atmosphere, and calm boutique accommodation."
+  },
+  "reservation": {
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "askAvailability": "Ask Availability",
+    "bookViaWhatsapp": "Book via WhatsApp"
+  },
+  "language": {
+    "turkish": "Turkce",
+    "english": "English",
+    "selectLanguage": "Select language"
   }
 }

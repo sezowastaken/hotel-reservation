@@ -1,7 +1,39 @@
 {
-  "scaffold": {
-    "eyebrow": "Palmiye Nature",
-    "title": "Web sitesi temeli hazir.",
-    "description": "Bu gecici sayfa, cok dilli rota yapisinin calistigini gostermek icin kullanilir."
+  "common": {
+    "siteName": "Palmiye Nature Hotel & Yacht Club",
+    "siteEyebrow": "Butik otel ve marina atmosferi",
+    "siteIntro": "Palmiye Nature Hotel & Yacht Club, dogayla ic ice sakin bir konaklama ve marina atmosferini bir araya getirir.",
+    "bookNow": "Rezervasyon Yap",
+    "contactUs": "Iletisime Gec",
+    "viewRooms": "Odalari Gor",
+    "viewGallery": "Galeriyi Gor",
+    "seeLocation": "Konumu Gor"
+  },
+  "navigation": {
+    "primary": "Ana navigasyon",
+    "home": "Ana Sayfa",
+    "rooms": "Odalar",
+    "restaurant": "Restoran",
+    "marina": "Marina",
+    "poolBar": "Pool Bar",
+    "rooftopTerrace": "Teras Bar",
+    "gallery": "Galeri",
+    "contact": "Iletisim"
+  },
+  "footer": {
+    "brand": "Palmiye Nature Hotel & Yacht Club",
+    "description": "Dogaya, marina atmosferine ve sakin butik konaklamaya odaklanan cok dilli tanitim sitesi."
+  },
+  "reservation": {
+    "checkIn": "Giris tarihi",
+    "checkOut": "Cikis tarihi",
+    "guests": "Misafirler",
+    "askAvailability": "Musaitlik Sor",
+    "bookViaWhatsapp": "WhatsApp ile Rezervasyon"
+  },
+  "language": {
+    "turkish": "Turkce",
+    "english": "English",
+    "selectLanguage": "Dil secin"
   }
 }

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { isSupportedLocale } from "@/lib/i18n/config";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
+import { isSupportedLocale, locales } from "@/lib/i18n/config";
 import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Palmiye Nature Hotel & Yacht Club",
-  description: "Phase 1 promotional website scaffold.",
+  description: "Multilingual promotional website foundation.",
 };
 
 type LocaleLayoutProps = {
@@ -14,6 +18,10 @@ type LocaleLayoutProps = {
     locale: string;
   }>;
 };
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
@@ -25,9 +33,18 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
