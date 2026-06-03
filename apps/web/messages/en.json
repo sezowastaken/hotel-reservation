@@ -22,14 +22,18 @@
   },
   "footer": {
     "brand": "Palmiye Nature Hotel & Yacht Club",
-    "description": "A multilingual promotional site focused on nature, marina atmosphere, and calm boutique accommodation."
+    "description": "A multilingual promotional site focused on nature, marina atmosphere, and calm boutique accommodation.",
+    "navigation": "Pages",
+    "contact": "Contact",
+    "contactFallback": "Direct contact details will appear here after they are confirmed by the hotel."
   },
   "reservation": {
     "checkIn": "Check-in",
     "checkOut": "Check-out",
     "guests": "Guests",
     "askAvailability": "Ask Availability",
-    "bookViaWhatsapp": "Book via WhatsApp"
+    "bookViaWhatsapp": "Book via WhatsApp",
+    "contactForReservation": "Contact Us"
   },
   "language": {
     "turkish": "Turkce",

@@ -27,7 +27,7 @@ export function LanguageSwitcher() {
       <span className="sr-only">{t("selectLanguage")}</span>
       <select
         aria-label={t("selectLanguage")}
-        className="rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-800"
+        className="min-h-10 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-800 outline-none focus-visible:ring-2 focus-visible:ring-teal-700"
         value={activeLocale}
         onChange={(event) => handleLocaleChange(event.target.value as Locale)}
       >

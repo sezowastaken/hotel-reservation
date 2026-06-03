@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { SiteShell } from "@/components/layout/SiteShell";
 import { isSupportedLocale, locales } from "@/lib/i18n/config";
+import { getSiteSettings } from "@/lib/services/site";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -34,15 +34,16 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const [messages, siteSettings] = await Promise.all([
+    getMessages(),
+    getSiteSettings(locale),
+  ]);
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <Footer />
+          <SiteShell siteSettings={siteSettings}>{children}</SiteShell>
         </NextIntlClientProvider>
       </body>
     </html>

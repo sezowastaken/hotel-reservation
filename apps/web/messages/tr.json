@@ -22,14 +22,18 @@
   },
   "footer": {
     "brand": "Palmiye Nature Hotel & Yacht Club",
-    "description": "Dogaya, marina atmosferine ve sakin butik konaklamaya odaklanan cok dilli tanitim sitesi."
+    "description": "Dogaya, marina atmosferine ve sakin butik konaklamaya odaklanan cok dilli tanitim sitesi.",
+    "navigation": "Sayfalar",
+    "contact": "Iletisim",
+    "contactFallback": "Dogrudan iletisim bilgileri otel tarafindan teyit edildikten sonra burada gosterilecek."
   },
   "reservation": {
     "checkIn": "Giris tarihi",
     "checkOut": "Cikis tarihi",
     "guests": "Misafirler",
     "askAvailability": "Musaitlik Sor",
-    "bookViaWhatsapp": "WhatsApp ile Rezervasyon"
+    "bookViaWhatsapp": "WhatsApp ile Rezervasyon",
+    "contactForReservation": "Iletisime Gec"
   },
   "language": {
     "turkish": "Turkce",
