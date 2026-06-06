@@ -7,7 +7,8 @@
     "contactUs": "Iletisime Gec",
     "viewRooms": "Odalari Gor",
     "viewGallery": "Galeriyi Gor",
-    "seeLocation": "Konumu Gor"
+    "seeLocation": "Konumu Gor",
+    "viewDetails": "Detaylari Gor"
   },
   "navigation": {
     "primary": "Ana navigasyon",
@@ -34,6 +35,33 @@
     "askAvailability": "Musaitlik Sor",
     "bookViaWhatsapp": "WhatsApp ile Rezervasyon",
     "contactForReservation": "Iletisime Gec"
+  },
+  "rooms": {
+    "amenities": "Oda detaylari",
+    "gallery": "Oda fotograflari",
+    "capacityNote": "Rezervasyon notu"
+  },
+  "experiences": {
+    "gallery": "Fotograflar",
+    "related": "Diger alanlari kesfet"
+  },
+  "gallery": {
+    "featured": "One cikan gorsel",
+    "categories": {
+      "rooms": "Odalar",
+      "nature": "Doga",
+      "marina": "Marina",
+      "restaurant": "Restoran",
+      "pool": "Pool Bar",
+      "rooftop": "Teras",
+      "exterior": "Dis gorunum"
+    }
+  },
+  "contact": {
+    "methods": "Iletisim secenekleri",
+    "location": "Konum",
+    "unconfirmed": "Dogrudan iletisim bilgileri otel tarafindan teyit edildikten sonra paylasilacak.",
+    "mapUnavailable": "Harita bilgisi, kesin konum baglantisi teyit edildikten sonra eklenecek."
   },
   "language": {
     "turkish": "Turkce",

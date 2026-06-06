@@ -7,7 +7,8 @@
     "contactUs": "Contact Us",
     "viewRooms": "View Rooms",
     "viewGallery": "View Gallery",
-    "seeLocation": "See Location"
+    "seeLocation": "See Location",
+    "viewDetails": "View Details"
   },
   "navigation": {
     "primary": "Primary navigation",
@@ -34,6 +35,33 @@
     "askAvailability": "Ask Availability",
     "bookViaWhatsapp": "Book via WhatsApp",
     "contactForReservation": "Contact Us"
+  },
+  "rooms": {
+    "amenities": "Room details",
+    "gallery": "Room images",
+    "capacityNote": "Reservation note"
+  },
+  "experiences": {
+    "gallery": "Images",
+    "related": "Explore more spaces"
+  },
+  "gallery": {
+    "featured": "Featured image",
+    "categories": {
+      "rooms": "Rooms",
+      "nature": "Nature",
+      "marina": "Marina",
+      "restaurant": "Restaurant",
+      "pool": "Pool Bar",
+      "rooftop": "Rooftop",
+      "exterior": "Exterior"
+    }
+  },
+  "contact": {
+    "methods": "Contact options",
+    "location": "Location",
+    "unconfirmed": "Direct contact details will be shared after they are confirmed by the hotel.",
+    "mapUnavailable": "Map details will be added after the exact location link is confirmed."
   },
   "language": {
     "turkish": "Turkce",

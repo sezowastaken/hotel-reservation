@@ -13,29 +13,36 @@ export function Header({ siteSettings }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200/80 bg-stone-50/95 backdrop-blur">
-      <Container className="flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
-        <Link
-          href="/"
-          className="max-w-[18rem] text-base font-semibold leading-tight text-stone-950"
-        >
-          {siteSettings.hotelName}
-        </Link>
-        <div className="flex flex-col gap-4 md:flex-row md:items-center">
+      <Container className="py-3 lg:flex lg:items-center lg:justify-between lg:gap-8">
+        <div className="flex items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="max-w-[14rem] text-sm font-semibold leading-tight text-stone-950 sm:max-w-none sm:text-base"
+          >
+            {siteSettings.hotelName}
+          </Link>
+          <div className="lg:hidden">
+            <LanguageSwitcher />
+          </div>
+        </div>
+        <div className="mt-3 flex items-center gap-4 lg:mt-0">
           <nav
             aria-label={navigation("primary")}
-            className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-stone-700"
+            className="-mx-4 flex flex-1 gap-4 overflow-x-auto px-4 pb-1 text-sm text-stone-700 lg:mx-0 lg:flex-none lg:flex-wrap lg:justify-end lg:overflow-visible lg:px-0 lg:pb-0"
           >
             {navigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-sm outline-none hover:text-teal-800 focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-4"
+                className="shrink-0 rounded-sm outline-none hover:text-teal-800 focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-4"
               >
                 {navigation(item.labelKey)}
               </Link>
             ))}
           </nav>
-          <LanguageSwitcher />
+          <div className="hidden lg:block">
+            <LanguageSwitcher />
+          </div>
         </div>
       </Container>
     </header>

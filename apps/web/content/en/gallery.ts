@@ -1,4 +1,29 @@
+import type { GalleryPageContent } from "@/lib/types/content";
 import type { GalleryImage } from "@/lib/types/hotel";
+
+export const galleryPageContent: GalleryPageContent = {
+  seo: {
+    title: "Gallery | Palmiye Nature Hotel & Yacht Club",
+    description:
+      "Photos from Palmiye Nature Hotel & Yacht Club, including rooms, nature, marina atmosphere, pool bar and terrace views.",
+    ogImage: "/images/gallery/marina-sunset.jpg",
+  },
+  hero: {
+    eyebrow: "Gallery",
+    title: "A closer look at the hotel's calm coastal atmosphere.",
+    subtitle:
+      "Browse room, nature, marina and social-space images from Palmiye Nature Hotel & Yacht Club.",
+    image: {
+      src: "/images/gallery/marina-sunset.jpg",
+      alt: "Sunset view over the marina near Palmiye Nature Hotel",
+    },
+    primaryCta: {
+      label: "Contact Us",
+      href: "/contact",
+      kind: "internal",
+    },
+  },
+};
 
 export const galleryImages: GalleryImage[] = [
   {
@@ -28,21 +53,21 @@ export const galleryImages: GalleryImage[] = [
   {
     id: "restaurant-area",
     src: "/images/gallery/restaurant-area.jpg",
-    alt: "Restaurant area in front of the hotel",
+    alt: "Social garden area near the front of the hotel",
     category: "restaurant",
     sortOrder: 40,
   },
   {
     id: "pool-bar-area",
     src: "/images/gallery/pool-bar-area.jpg",
-    alt: "Pool bar area beside the pool",
+    alt: "Aerial view of the hotel surroundings and pool area",
     category: "pool",
     sortOrder: 50,
   },
   {
     id: "rooftop-terrace",
     src: "/images/gallery/rooftop-terrace.jpg",
-    alt: "Top-floor rooftop terrace bar atmosphere",
+    alt: "Sunset view over the bay near the rooftop terrace atmosphere",
     category: "rooftop",
     sortOrder: 60,
   },

@@ -68,6 +68,11 @@ export type RoomsPageContent = {
   overview: PageSectionContent;
 };
 
+export type GalleryPageContent = {
+  seo: SeoContent;
+  hero: PageHeroContent;
+};
+
 export type ContactMethod = {
   id: string;
   label: string;

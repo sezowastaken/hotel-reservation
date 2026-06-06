@@ -1,4 +1,29 @@
+import type { GalleryPageContent } from "@/lib/types/content";
 import type { GalleryImage } from "@/lib/types/hotel";
+
+export const galleryPageContent: GalleryPageContent = {
+  seo: {
+    title: "Galeri | Palmiye Nature Hotel & Yacht Club",
+    description:
+      "Palmiye Nature Hotel & Yacht Club icinden odalar, doga, marina atmosferi, pool bar ve teras manzaralarina ait fotograflar.",
+    ogImage: "/images/gallery/marina-sunset.jpg",
+  },
+  hero: {
+    eyebrow: "Galeri",
+    title: "Otelin sakin sahil atmosferine yakindan bak.",
+    subtitle:
+      "Palmiye Nature Hotel & Yacht Club oda, doga, marina ve sosyal alan fotograflarini inceleyin.",
+    image: {
+      src: "/images/gallery/marina-sunset.jpg",
+      alt: "Palmiye Nature Hotel yakininda marina uzerinde gun batimi",
+    },
+    primaryCta: {
+      label: "Iletisime Gec",
+      href: "/contact",
+      kind: "internal",
+    },
+  },
+};
 
 export const galleryImages: GalleryImage[] = [
   {
@@ -28,21 +53,21 @@ export const galleryImages: GalleryImage[] = [
   {
     id: "restaurant-area",
     src: "/images/gallery/restaurant-area.jpg",
-    alt: "Otel onundeki restoran alani",
+    alt: "Otelin on tarafina yakin sosyal bahce alani",
     category: "restaurant",
     sortOrder: 40,
   },
   {
     id: "pool-bar-area",
     src: "/images/gallery/pool-bar-area.jpg",
-    alt: "Havuz kenarindaki pool bar alani",
+    alt: "Otel cevresi ve havuz alanini gosteren havadan manzara",
     category: "pool",
     sortOrder: 50,
   },
   {
     id: "rooftop-terrace",
     src: "/images/gallery/rooftop-terrace.jpg",
-    alt: "Ust kattaki teras bar atmosferi",
+    alt: "Teras atmosferine yakin koy uzerinde gun batimi manzarasi",
     category: "rooftop",
     sortOrder: 60,
   },

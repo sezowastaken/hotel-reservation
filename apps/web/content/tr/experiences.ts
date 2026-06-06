@@ -12,12 +12,12 @@ export const experiences: Experience[] = [
       "Palmiye Nature restoran alani, otelin on tarafindaki sosyal yasami tamamlar. Gunun temposuna uygun, rahat ve samimi bir yemek atmosferi sunar.",
     image: {
       src: "/images/restaurant/restaurant-front.jpg",
-      alt: "Palmiye Nature Hotel restoran alani",
+      alt: "Palmiye Nature Hotel on tarafina yakin sosyal bahce alani",
     },
     galleryImages: [
       {
         src: "/images/restaurant/restaurant-front.jpg",
-        alt: "Otel onundeki restoran alani",
+        alt: "Otel on tarafina yakin bahce ve sosyal alan",
       },
     ],
     cta: {
@@ -74,12 +74,12 @@ export const experiences: Experience[] = [
       "Otelin arka tarafindaki havuz ve pool bar alani, gun icinde sakin vakit gecirmek isteyen misafirler icin rahat bir atmosfer olusturur.",
     image: {
       src: "/images/pool/pool-bar.jpg",
-      alt: "Palmiye Nature Hotel pool bar alani",
+      alt: "Otel cevresi ve havuz alanini gosteren havadan manzara",
     },
     galleryImages: [
       {
         src: "/images/pool/pool-bar.jpg",
-        alt: "Havuz kenarinda pool bar alani",
+        alt: "Havuz alani gorunen otel cevresi",
       },
     ],
     cta: {
@@ -105,12 +105,12 @@ export const experiences: Experience[] = [
       "Teras bar, gunun sonunda sakin bir manzara ve gun batimi atmosferi arayan misafirler icin ust katta konumlanan rahat bir bulusma alanidir.",
     image: {
       src: "/images/rooftop/terrace-bar.jpg",
-      alt: "Palmiye Nature Hotel teras bar atmosferi",
+      alt: "Palmiye Nature Hotel yakininda koy uzerinde gun batimi",
     },
     galleryImages: [
       {
         src: "/images/rooftop/terrace-bar.jpg",
-        alt: "Teras barda gun batimi atmosferi",
+        alt: "Teras atmosferine yakin koy gun batimi",
       },
     ],
     cta: {

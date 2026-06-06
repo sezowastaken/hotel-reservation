@@ -12,12 +12,12 @@ export const experiences: Experience[] = [
       "The restaurant area completes the social side of Palmiye Nature in front of the hotel. It offers a relaxed and welcoming atmosphere for meals that fit the rhythm of the day.",
     image: {
       src: "/images/restaurant/restaurant-front.jpg",
-      alt: "Restaurant area at Palmiye Nature Hotel",
+      alt: "Social garden area near the front of Palmiye Nature Hotel",
     },
     galleryImages: [
       {
         src: "/images/restaurant/restaurant-front.jpg",
-        alt: "Restaurant area in front of the hotel",
+        alt: "Front garden and social area near the hotel",
       },
     ],
     cta: {
@@ -74,12 +74,12 @@ export const experiences: Experience[] = [
       "The pool and pool bar area behind the hotel creates a comfortable daytime atmosphere for guests who want to rest, refresh and stay close to the hotel.",
     image: {
       src: "/images/pool/pool-bar.jpg",
-      alt: "Pool bar area at Palmiye Nature Hotel",
+      alt: "Aerial view of the hotel surroundings and pool area",
     },
     galleryImages: [
       {
         src: "/images/pool/pool-bar.jpg",
-        alt: "Poolside pool bar area",
+        alt: "Hotel surroundings with pool area visible",
       },
     ],
     cta: {
@@ -105,12 +105,12 @@ export const experiences: Experience[] = [
       "The rooftop terrace bar is a relaxed top-floor gathering space for guests who want a calm view and sunset atmosphere at the end of the day.",
     image: {
       src: "/images/rooftop/terrace-bar.jpg",
-      alt: "Rooftop terrace bar atmosphere at Palmiye Nature Hotel",
+      alt: "Sunset view over the bay near Palmiye Nature Hotel",
     },
     galleryImages: [
       {
         src: "/images/rooftop/terrace-bar.jpg",
-        alt: "Sunset atmosphere at the terrace bar",
+        alt: "Bay sunset atmosphere near the rooftop terrace",
       },
     ],
     cta: {
