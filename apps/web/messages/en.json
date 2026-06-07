@@ -12,6 +12,7 @@
   },
   "navigation": {
     "primary": "Primary navigation",
+    "menu": "Menu",
     "home": "Home",
     "rooms": "Rooms",
     "restaurant": "Restaurant",
@@ -23,8 +24,10 @@
   },
   "footer": {
     "brand": "Palmiye Nature Hotel & Yacht Club",
-    "description": "A multilingual promotional site focused on nature, marina atmosphere, and calm boutique accommodation.",
+    "description": "A warm Marmaris experience shaped by nature, marina atmosphere, and calm boutique accommodation.",
     "navigation": "Pages",
+    "stay": "Stay",
+    "experiences": "Experiences",
     "contact": "Contact",
     "contactFallback": "Direct contact details will appear here after they are confirmed by the hotel."
   },
@@ -64,8 +67,9 @@
     "mapUnavailable": "Map details will be added after the exact location link is confirmed."
   },
   "language": {
-    "turkish": "Turkce",
+    "turkish": "Turkish",
     "english": "English",
-    "selectLanguage": "Select language"
+    "selectLanguage": "Select language",
+    "close": "Close"
   }
 }

@@ -20,13 +20,12 @@ export function ReservationCTA({
   const t = useTranslations("reservation");
 
   return (
-    <section className={cn("bg-teal-950 py-16 text-white sm:py-20", className)}>
+    <section className={cn("bg-[#F7F1E7] px-4 py-8 sm:py-10", className)}>
       <Container>
-        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="grid gap-6 rounded-2xl border border-[#123A32]/10 bg-[#FBF7EF] p-5 shadow-[0_18px_60px_rgba(18,58,50,0.10)] sm:p-7 lg:grid-cols-[1fr_auto] lg:items-center">
           <SectionHeader
-            className="text-white [&_h2]:text-white [&_p]:text-teal-50"
+            className="[&_h2]:text-2xl [&_h2]:sm:text-3xl [&_p]:text-base"
             description={content.description}
-            eyebrow={t("askAvailability")}
             title={content.title}
           />
           <WhatsAppBookingButton
@@ -39,6 +38,7 @@ export function ReservationCTA({
             label={content.primaryCta.label}
             message={content.whatsappMessage}
             siteSettings={siteSettings}
+            className="w-full sm:w-auto"
           />
         </div>
       </Container>

@@ -2,7 +2,6 @@ import { createNavigation } from "next-intl/navigation";
 import { routing, type PublicPathname } from "@/lib/i18n/config";
 
 export const navigationItems = [
-  { href: "/", labelKey: "home" },
   { href: "/rooms", labelKey: "rooms" },
   { href: "/restaurant", labelKey: "restaurant" },
   { href: "/marina", labelKey: "marina" },

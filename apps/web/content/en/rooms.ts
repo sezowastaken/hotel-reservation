@@ -8,7 +8,7 @@ export const publicRoomInfo: RoomPublicInfo = {
   shortDescription:
     "A simple, warm and comfortable boutique room experience at Palmiye Nature Hotel & Yacht Club.",
   description:
-    "The hotel's 14 rooms are currently presented as one general stay experience. The rooms offer a calm and comfortable base for guests who want to stay close to nature, the marina atmosphere and the hotel's boutique scale.",
+    "The hotel's calm 14-room scale offers a simple and comfortable base for guests who want to stay close to nature and the marina atmosphere.",
   capacityNote:
     "Guest capacity and bed setup are confirmed directly by the hotel during the reservation inquiry.",
   amenities: [
@@ -55,9 +55,9 @@ export const roomsPageContent: RoomsPageContent = {
   },
   overview: {
     id: "rooms-overview",
-    title: "One public room experience",
+    title: "A simple, calm room atmosphere",
     description:
-      "The public website does not split rooms into separate categories for now. The focus is the hotel's boutique scale, comfortable rooms and direct reservation communication.",
+      "The focus is the hotel's boutique scale, comfortable rooms and clear reservation information through direct contact.",
     image: publicRoomInfo.featuredImage,
     cta: publicRoomInfo.cta,
   },

@@ -4,25 +4,25 @@ export const homePageContent: HomePageContent = {
   seo: {
     title: "Palmiye Nature Hotel & Yacht Club | Marmaris Butik Otel",
     description:
-      "Marmaris'te doga, marina atmosferi, restoran, pool bar ve teras bar ile sakin bir butik otel deneyimi.",
+      "Marmaris'te doğa, marina atmosferi, restoran, pool bar ve teras bar ile sakin bir butik otel deneyimi.",
     ogImage: "/images/hero/palmiye-marina-sunset.jpg",
   },
   hero: {
     eyebrow: "Marmaris'te butik konaklama",
-    title: "Doga, marina ve gun batimi arasinda sakin bir butik otel.",
+    title: "Doğa, marina ve gün batımı arasında sakin bir butik otel.",
     subtitle:
-      "Palmiye Nature Hotel & Yacht Club, 14 odali butik yapisi, restoran, pool bar ve teras bar atmosferiyle huzurlu bir kacis noktasi sunar.",
+      "Palmiye Nature Hotel & Yacht Club, 14 odalı butik yapısı, restoranı, pool barı ve teras barıyla huzurlu bir Marmaris kaçış noktasıdır.",
     image: {
       src: "/images/hero/palmiye-marina-sunset.jpg",
-      alt: "Palmiye Nature Hotel yakininda marina uzerinde gun batimi",
+      alt: "Palmiye Nature Hotel yakınında marina üzerinde gün batımı",
     },
     primaryCta: {
-      label: "WhatsApp ile Rezervasyon",
+      label: "Konaklamanı Planla",
       href: "/contact",
       kind: "internal",
     },
     secondaryCta: {
-      label: "Oteli Kesfet",
+      label: "Oteli Keşfet",
       href: "/gallery",
       kind: "internal",
     },
@@ -30,36 +30,47 @@ export const homePageContent: HomePageContent = {
   highlights: [
     {
       id: "boutique-scale",
-      title: "14 odali butik olcek",
+      title: "14 odalı butik ölçek",
       description:
-        "Kucuk ve sakin yapisi sayesinde daha rahat, sade ve samimi bir konaklama hissi verir.",
+        "Küçük ve sakin yapısı sayesinde daha rahat, sade ve samimi bir konaklama hissi verir.",
     },
     {
       id: "marina-atmosphere",
       title: "Marina atmosferi",
       description:
-        "Otelin on tarafindaki marina ve yat kulubu hissi, gunun ritmini sahil havasiyla birlestirir.",
+        "Otelin ön tarafındaki marina ve yat kulübü hissi, günün ritmini sahil havasıyla birleştirir.",
     },
     {
       id: "social-spaces",
       title: "Restoran, pool bar ve teras",
       description:
-        "Restoran, havuz kenarindaki pool bar ve ust kattaki teras bar gun boyunca farkli anlar icin alan acar.",
+        "Restoran, havuz kenarındaki pool bar ve üst kattaki teras bar gün boyunca farklı anlar için alan açar.",
     },
   ],
   sections: [
+    {
+      id: "story",
+      eyebrow: "Palmiye'nin ritmi",
+      title: "Küçük ölçekli, sıcak ve denize yakın bir Marmaris hissi.",
+      description:
+        "Burada gün; marina tarafındaki hareket, restoranın sıcaklığı, havuz kenarındaki sakinlik ve terastan izlenen gün batımıyla yavaşça akar.",
+      image: {
+        src: "/images/gallery/palmiye-social-areas.jpg",
+        alt: "Palmiye Nature Hotel sosyal alanlarında sıcak akşam atmosferi",
+      },
+    },
     {
       id: "rooms",
       eyebrow: "Odalar",
       title: "Sade ve konforlu odalar",
       description:
-        "Tum odalar ayni genel konaklama deneyimiyle sunulur: sakin, sicak ve butik otel olcegine uygun bir oda atmosferi.",
+        "Sade, sıcak ve konforlu odalar; doğaya ve marina atmosferine yakın sakin bir konaklama için hazırlandı.",
       image: {
         src: "/images/rooms/boutique-room.jpg",
-        alt: "Palmiye Nature Hotel icinde konforlu butik oda",
+        alt: "Palmiye Nature Hotel içinde konforlu butik oda",
       },
       cta: {
-        label: "Odalari Gor",
+        label: "Odaları Gör",
         href: "/rooms",
         kind: "internal",
       },
@@ -67,9 +78,9 @@ export const homePageContent: HomePageContent = {
     {
       id: "experiences",
       eyebrow: "Deneyimler",
-      title: "Gun boyu farkli atmosferler",
+      title: "Gün boyu farklı atmosferler",
       description:
-        "Restoran, marina, pool bar ve teras bar; dogayla ic ice sakin bir tatil gununu tamamlayan ana alanlardir.",
+        "Restoran, marina, pool bar ve teras bar; doğayla iç içe sakin bir tatil gününü tamamlayan ana alanlardır.",
       image: {
         src: "/images/gallery/palmiye-social-areas.jpg",
         alt: "Palmiye Nature Hotel sosyal alanlari",
@@ -82,15 +93,25 @@ export const homePageContent: HomePageContent = {
     },
   ],
   reservationCta: {
-    title: "Konaklamani planla",
+    title: "Otel ile doğrudan iletişime geç",
     description:
-      "Musaitlik ve rezervasyon bilgisi icin otelle dogrudan iletisime gecebilirsin.",
+      "Müsaitlik ve rezervasyon bilgisi için otelle doğrudan iletişime geçebilirsin.",
     primaryCta: {
-      label: "Musaitlik Sor",
+      label: "İletişime Geç",
       href: "/contact",
       kind: "internal",
     },
     whatsappMessage:
-      "Merhaba, Palmiye Nature Hotel & Yacht Club icin musaitlik ve rezervasyon bilgisi almak istiyorum.",
+      "Merhaba, Palmiye Nature Hotel & Yacht Club için müsaitlik ve rezervasyon bilgisi almak istiyorum.",
+  },
+  finalCta: {
+    title: "Marmaris'te sakin bir kaçış için Palmiye ile konuş.",
+    description:
+      "Tarih, kişi sayısı ve konaklama beklentin için en net bilgiyi otelle doğrudan iletişime geçerek alabilirsin.",
+    primaryCta: {
+      label: "Konaklamanı Planla",
+      href: "/contact",
+      kind: "internal",
+    },
   },
 };

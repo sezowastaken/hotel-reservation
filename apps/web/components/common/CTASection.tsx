@@ -22,11 +22,11 @@ export function CTASection({
   className,
 }: CTASectionProps) {
   return (
-    <section className={cn("bg-stone-100 py-16 sm:py-20", className)}>
+    <section className={cn("bg-[var(--background)] py-16 sm:py-20", className)}>
       <Container>
-        <div className="grid gap-8 rounded-lg border border-stone-200 bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="grid gap-8 overflow-hidden rounded-[2rem] bg-[#123A32] p-6 text-[#FFF8EC] shadow-[0_24px_80px_rgba(18,58,50,0.18)] sm:p-9 lg:grid-cols-[1fr_auto] lg:items-center">
           <SectionHeader
-            className="max-w-2xl"
+            className="max-w-2xl [&_h2]:text-[#FFF8EC] [&_p]:text-[#EDE3D2]"
             description={description}
             eyebrow={eyebrow}
             title={title}
@@ -38,6 +38,7 @@ export function CTASection({
                   href={primaryCta.href}
                   isExternal={primaryCta.kind === "external"}
                   size="lg"
+                  variant="primary"
                 >
                   {primaryCta.label}
                 </ButtonLink>
@@ -47,7 +48,7 @@ export function CTASection({
                   href={secondaryCta.href}
                   isExternal={secondaryCta.kind === "external"}
                   size="lg"
-                  variant="outline"
+                  variant="secondary"
                 >
                   {secondaryCta.label}
                 </ButtonLink>

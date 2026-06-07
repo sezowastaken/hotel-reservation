@@ -7,28 +7,28 @@ export const experiences: Experience[] = [
     type: "restaurant",
     title: "Restoran",
     shortDescription:
-      "Otelin on tarafinda, gun icinde rahat yemekler ve bulusmalar icin sakin bir alan.",
+      "Otelin ön tarafında, gün içinde rahat yemekler ve buluşmalar için sakin bir alan.",
     description:
-      "Palmiye Nature restoran alani, otelin on tarafindaki sosyal yasami tamamlar. Gunun temposuna uygun, rahat ve samimi bir yemek atmosferi sunar.",
+      "Palmiye Nature restoran alanı, otelin ön tarafındaki sosyal yaşamı tamamlar. Günün temposuna uygun, rahat ve samimi bir yemek atmosferi sunar.",
     image: {
       src: "/images/restaurant/restaurant-front.jpg",
-      alt: "Palmiye Nature Hotel on tarafina yakin sosyal bahce alani",
+      alt: "Palmiye Nature Hotel ön tarafına yakın sosyal bahçe alanı",
     },
     galleryImages: [
       {
         src: "/images/restaurant/restaurant-front.jpg",
-        alt: "Otel on tarafina yakin bahce ve sosyal alan",
+        alt: "Otel ön tarafına yakın bahçe ve sosyal alan",
       },
     ],
     cta: {
-      label: "Restorani Gor",
+      label: "Restoranı Gör",
       href: "/restaurant",
       kind: "internal",
     },
     seo: {
       title: "Restoran | Palmiye Nature Hotel & Yacht Club",
       description:
-        "Palmiye Nature Hotel onundeki restoran alani, butik otel atmosferini rahat yemek ve bulusma alaniyla tamamlar.",
+        "Palmiye Nature Hotel önündeki restoran alanı, butik otel atmosferini rahat yemek ve buluşma alanıyla tamamlar.",
       ogImage: "/images/restaurant/restaurant-front.jpg",
     },
   },
@@ -38,12 +38,12 @@ export const experiences: Experience[] = [
     type: "marina",
     title: "Marina ve Yacht Club Atmosferi",
     shortDescription:
-      "Otelin on tarafindaki marina hissi, konaklamaya sahil ve tekne atmosferi katar.",
+      "Otelin ön tarafındaki marina hissi, konaklamaya sahil ve tekne atmosferi katar.",
     description:
-      "Marina ve yat kulubu atmosferi, Palmiye Nature'in en guclu hislerinden biridir. Tekne manzaralari, sakin koy havasi ve gun batimi, otelin butik karakterini destekler.",
+      "Marina ve yat kulübü atmosferi, Palmiye Nature'ın en güçlü hislerinden biridir. Tekne manzaraları, sakin koy havası ve gün batımı, otelin butik karakterini destekler.",
     image: {
       src: "/images/marina/marina-view.jpg",
-      alt: "Palmiye Nature Hotel yakininda marina manzarasi",
+      alt: "Palmiye Nature Hotel yakınında marina manzarası",
     },
     galleryImages: [
       {
@@ -52,14 +52,14 @@ export const experiences: Experience[] = [
       },
     ],
     cta: {
-      label: "Marinayi Kesfet",
+      label: "Marinayı Keşfet",
       href: "/marina",
       kind: "internal",
     },
     seo: {
       title: "Marina | Palmiye Nature Hotel & Yacht Club",
       description:
-        "Palmiye Nature Hotel, marina ve yat kulubu atmosferine yakin sakin bir butik konaklama deneyimi sunar.",
+        "Palmiye Nature Hotel, marina ve yat kulübü atmosferine yakın sakin bir butik konaklama deneyimi sunar.",
       ogImage: "/images/marina/marina-view.jpg",
     },
   },
@@ -69,28 +69,28 @@ export const experiences: Experience[] = [
     type: "pool-bar",
     title: "Pool Bar",
     shortDescription:
-      "Havuz alaninin yaninda, gun icinde serinlemek ve dinlenmek icin rahat bir bulusma noktasi.",
+      "Havuz alanının yanında, gün içinde serinlemek ve dinlenmek için rahat bir buluşma noktası.",
     description:
-      "Otelin arka tarafindaki havuz ve pool bar alani, gun icinde sakin vakit gecirmek isteyen misafirler icin rahat bir atmosfer olusturur.",
+      "Otelin arka tarafındaki havuz ve pool bar alanı, gün içinde sakin vakit geçirmek isteyen misafirler için rahat bir atmosfer oluşturur.",
     image: {
       src: "/images/pool/pool-bar.jpg",
-      alt: "Otel cevresi ve havuz alanini gosteren havadan manzara",
+      alt: "Otel çevresi ve havuz alanını gösteren havadan manzara",
     },
     galleryImages: [
       {
         src: "/images/pool/pool-bar.jpg",
-        alt: "Havuz alani gorunen otel cevresi",
+        alt: "Havuz alanı görünen otel çevresi",
       },
     ],
     cta: {
-      label: "Pool Bar'i Gor",
+      label: "Pool Bar'ı Gör",
       href: "/pool-bar",
       kind: "internal",
     },
     seo: {
       title: "Pool Bar | Palmiye Nature Hotel & Yacht Club",
       description:
-        "Palmiye Nature Hotel pool bar alani, havuz kenarinda sakin ve rahat bir gun atmosferi sunar.",
+        "Palmiye Nature Hotel pool bar alanı, havuz kenarında sakin ve rahat bir gün atmosferi sunar.",
       ogImage: "/images/pool/pool-bar.jpg",
     },
   },
@@ -100,28 +100,28 @@ export const experiences: Experience[] = [
     type: "rooftop-terrace",
     title: "Teras Bar",
     shortDescription:
-      "Ust kattaki teras bar, aksamlari gun batimi ve manzara hissiyle otelin en keyifli alanlarindan biri.",
+      "Üst kattaki teras bar, akşamları gün batımı ve manzara hissiyle otelin en keyifli alanlarından biri.",
     description:
-      "Teras bar, gunun sonunda sakin bir manzara ve gun batimi atmosferi arayan misafirler icin ust katta konumlanan rahat bir bulusma alanidir.",
+      "Teras bar, günün sonunda sakin bir manzara ve gün batımı atmosferi arayan misafirler için üst katta konumlanan rahat bir buluşma alanıdır.",
     image: {
       src: "/images/rooftop/terrace-bar.jpg",
-      alt: "Palmiye Nature Hotel yakininda koy uzerinde gun batimi",
+      alt: "Palmiye Nature Hotel yakınında koy üzerinde gün batımı",
     },
     galleryImages: [
       {
         src: "/images/rooftop/terrace-bar.jpg",
-        alt: "Teras atmosferine yakin koy gun batimi",
+        alt: "Teras atmosferine yakın koy gün batımı",
       },
     ],
     cta: {
-      label: "Teras Bar'i Gor",
+      label: "Teras Bar'ı Gör",
       href: "/rooftop-terrace",
       kind: "internal",
     },
     seo: {
       title: "Teras Bar | Palmiye Nature Hotel & Yacht Club",
       description:
-        "Palmiye Nature Hotel teras bar, ust katta gun batimi ve sakin manzara atmosferi sunar.",
+        "Palmiye Nature Hotel teras bar, üst katta gün batımı ve sakin manzara atmosferi sunar.",
       ogImage: "/images/rooftop/terrace-bar.jpg",
     },
   },

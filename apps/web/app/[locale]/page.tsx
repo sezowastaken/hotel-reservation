@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { CTASection } from "@/components/common/CTASection";
 import { ReservationCTA } from "@/components/common/ReservationCTA";
-import { ExperiencesSection } from "@/components/sections/ExperiencesSection";
-import { GalleryPreviewSection } from "@/components/sections/GalleryPreviewSection";
+import { BoutiqueStorySection } from "@/components/sections/BoutiqueStorySection";
+import { ExperienceMosaic } from "@/components/sections/ExperienceMosaic";
+import { GalleryCollage } from "@/components/sections/GalleryCollage";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { HighlightsSection } from "@/components/sections/HighlightsSection";
-import { LocationPreviewSection } from "@/components/sections/LocationPreviewSection";
-import { RoomsPreviewSection } from "@/components/sections/RoomsPreviewSection";
+import { RoomStorySection } from "@/components/sections/RoomStorySection";
 import {
-  getContactContent,
   getGalleryPageContent,
   getHomePageContent,
 } from "@/lib/services/pages";
@@ -50,24 +48,23 @@ export default async function LocaleHomePage({ params }: HomePageProps) {
   const [
     homeContent,
     galleryContent,
-    contactContent,
     room,
     experiences,
     galleryImages,
     siteSettings,
-    contactMessages,
   ] = await Promise.all([
     getHomePageContent(locale),
     getGalleryPageContent(locale),
-    getContactContent(locale),
     getPublicRoomInfo(locale),
     getExperiences(locale),
     getGalleryImages(locale),
     getSiteSettings(locale),
-    getTranslations({ locale, namespace: "contact" }),
   ]);
   const roomsSection = homeContent.sections.find(
     (section) => section.id === "rooms",
+  );
+  const storySection = homeContent.sections.find(
+    (section) => section.id === "story",
   );
   const experiencesSection = homeContent.sections.find(
     (section) => section.id === "experiences",
@@ -77,36 +74,34 @@ export default async function LocaleHomePage({ params }: HomePageProps) {
     <main>
       <HeroSection hero={homeContent.hero} variant="home" />
       <ReservationCTA
+        className="relative z-20 -mt-10"
         content={homeContent.reservationCta}
         siteSettings={siteSettings}
       />
-      <HighlightsSection
-        description={homeContent.hero.subtitle}
+      <BoutiqueStorySection
+        description={storySection?.description ?? homeContent.hero.subtitle}
+        eyebrow={storySection?.eyebrow}
         highlights={homeContent.highlights}
-        title={homeContent.hero.eyebrow ?? siteSettings.shortName}
+        image={storySection?.image ?? experiencesSection?.image}
+        title={storySection?.title ?? siteSettings.shortName}
       />
       {roomsSection ? (
-        <RoomsPreviewSection room={room} section={roomsSection} />
+        <RoomStorySection room={room} section={roomsSection} />
       ) : null}
-      <ExperiencesSection
+      <ExperienceMosaic
         experiences={experiences}
         section={experiencesSection}
       />
-      <GalleryPreviewSection
+      <GalleryCollage
         cta={experiencesSection?.cta}
         description={galleryContent.hero.subtitle}
         images={galleryImages}
         title={galleryContent.hero.title}
       />
-      <LocationPreviewSection
-        contactContent={contactContent}
-        fallbackText={contactMessages("mapUnavailable")}
-        siteSettings={siteSettings}
-      />
       <CTASection
-        description={homeContent.reservationCta.description}
-        primaryCta={homeContent.reservationCta.primaryCta}
-        title={homeContent.reservationCta.title}
+        description={homeContent.finalCta.description}
+        primaryCta={homeContent.finalCta.primaryCta}
+        title={homeContent.finalCta.title}
       />
     </main>
   );

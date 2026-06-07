@@ -27,7 +27,7 @@ export function ImageFrame({
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-lg bg-stone-200",
+        "relative overflow-hidden rounded-xl bg-[#EFE4D2]",
         aspectClasses[aspectRatio],
         className,
       )}

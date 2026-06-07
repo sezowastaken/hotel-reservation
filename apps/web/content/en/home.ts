@@ -17,7 +17,7 @@ export const homePageContent: HomePageContent = {
       alt: "Sunset over the marina near Palmiye Nature Hotel",
     },
     primaryCta: {
-      label: "Book via WhatsApp",
+      label: "Plan Your Stay",
       href: "/contact",
       kind: "internal",
     },
@@ -49,11 +49,22 @@ export const homePageContent: HomePageContent = {
   ],
   sections: [
     {
+      id: "story",
+      eyebrow: "The rhythm of Palmiye",
+      title: "Small in scale, warm in feeling, close to the marina.",
+      description:
+        "The day moves gently between the marina atmosphere, the restaurant, the quiet pool area and sunset moments on the terrace.",
+      image: {
+        src: "/images/gallery/palmiye-social-areas.jpg",
+        alt: "Warm evening atmosphere in the social areas at Palmiye Nature Hotel",
+      },
+    },
+    {
       id: "rooms",
       eyebrow: "Rooms",
       title: "Simple and comfortable rooms",
       description:
-        "All rooms are presented as one general stay experience: calm, warm and suited to the hotel's boutique scale.",
+        "A simple, warm room experience for a calm stay close to nature and the marina atmosphere.",
       image: {
         src: "/images/rooms/boutique-room.jpg",
         alt: "Comfortable boutique room at Palmiye Nature Hotel",
@@ -82,15 +93,25 @@ export const homePageContent: HomePageContent = {
     },
   ],
   reservationCta: {
-    title: "Plan your stay",
+    title: "Contact the hotel directly",
     description:
       "Contact the hotel directly for availability and reservation information.",
     primaryCta: {
-      label: "Ask Availability",
+      label: "Contact Us",
       href: "/contact",
       kind: "internal",
     },
     whatsappMessage:
       "Hello, I would like to get availability and reservation information for Palmiye Nature Hotel & Yacht Club.",
+  },
+  finalCta: {
+    title: "Ready for a calm Marmaris stay? Talk to Palmiye.",
+    description:
+      "For dates, guest details and reservation questions, the clearest next step is direct contact with the hotel.",
+    primaryCta: {
+      label: "Plan Your Stay",
+      href: "/contact",
+      kind: "internal",
+    },
   },
 };

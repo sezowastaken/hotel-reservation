@@ -7,9 +7,9 @@ type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
 };
 
 const toneClasses: Record<NonNullable<BadgeProps["tone"]>, string> = {
-  neutral: "bg-stone-100 text-stone-700 ring-stone-200",
-  teal: "bg-teal-50 text-teal-900 ring-teal-100",
-  warm: "bg-amber-50 text-amber-900 ring-amber-100",
+  neutral: "bg-[#F7F1E7] text-[#123A32] ring-[#123A32]/15",
+  teal: "bg-[#E3F0ED] text-[#123A32] ring-[#7CA9A3]/35",
+  warm: "bg-[#F3DFD4] text-[#8F4E3B] ring-[#B96A4D]/25",
 };
 
 export function Badge({

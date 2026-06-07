@@ -2,16 +2,17 @@
   "common": {
     "siteName": "Palmiye Nature Hotel & Yacht Club",
     "siteEyebrow": "Butik otel ve marina atmosferi",
-    "siteIntro": "Palmiye Nature Hotel & Yacht Club, dogayla ic ice sakin bir konaklama ve marina atmosferini bir araya getirir.",
+    "siteIntro": "Palmiye Nature Hotel & Yacht Club, doğayla iç içe sakin bir konaklama ve marina atmosferini bir araya getirir.",
     "bookNow": "Rezervasyon Yap",
-    "contactUs": "Iletisime Gec",
-    "viewRooms": "Odalari Gor",
-    "viewGallery": "Galeriyi Gor",
-    "seeLocation": "Konumu Gor",
-    "viewDetails": "Detaylari Gor"
+    "contactUs": "İletişime Geç",
+    "viewRooms": "Odaları Gör",
+    "viewGallery": "Galeriyi Gör",
+    "seeLocation": "Konumu Gör",
+    "viewDetails": "Detayları Gör"
   },
   "navigation": {
     "primary": "Ana navigasyon",
+    "menu": "Menü",
     "home": "Ana Sayfa",
     "rooms": "Odalar",
     "restaurant": "Restoran",
@@ -19,53 +20,56 @@
     "poolBar": "Pool Bar",
     "rooftopTerrace": "Teras Bar",
     "gallery": "Galeri",
-    "contact": "Iletisim"
+    "contact": "İletişim"
   },
   "footer": {
     "brand": "Palmiye Nature Hotel & Yacht Club",
-    "description": "Dogaya, marina atmosferine ve sakin butik konaklamaya odaklanan cok dilli tanitim sitesi.",
+    "description": "Doğa, marina atmosferi ve sakin butik konaklama hissini bir araya getiren sıcak bir Marmaris deneyimi.",
     "navigation": "Sayfalar",
-    "contact": "Iletisim",
-    "contactFallback": "Dogrudan iletisim bilgileri otel tarafindan teyit edildikten sonra burada gosterilecek."
+    "stay": "Konaklama",
+    "experiences": "Deneyimler",
+    "contact": "İletişim",
+    "contactFallback": "Doğrudan iletişim bilgileri otel tarafından teyit edildikten sonra burada gösterilecek."
   },
   "reservation": {
-    "checkIn": "Giris tarihi",
-    "checkOut": "Cikis tarihi",
+    "checkIn": "Giriş tarihi",
+    "checkOut": "Çıkış tarihi",
     "guests": "Misafirler",
-    "askAvailability": "Musaitlik Sor",
+    "askAvailability": "Müsaitlik Sor",
     "bookViaWhatsapp": "WhatsApp ile Rezervasyon",
-    "contactForReservation": "Iletisime Gec"
+    "contactForReservation": "İletişime Geç"
   },
   "rooms": {
-    "amenities": "Oda detaylari",
-    "gallery": "Oda fotograflari",
+    "amenities": "Oda detayları",
+    "gallery": "Oda fotoğrafları",
     "capacityNote": "Rezervasyon notu"
   },
   "experiences": {
-    "gallery": "Fotograflar",
-    "related": "Diger alanlari kesfet"
+    "gallery": "Fotoğraflar",
+    "related": "Diğer alanları keşfet"
   },
   "gallery": {
-    "featured": "One cikan gorsel",
+    "featured": "Öne çıkan görsel",
     "categories": {
       "rooms": "Odalar",
-      "nature": "Doga",
+      "nature": "Doğa",
       "marina": "Marina",
       "restaurant": "Restoran",
       "pool": "Pool Bar",
       "rooftop": "Teras",
-      "exterior": "Dis gorunum"
+      "exterior": "Dış görünüm"
     }
   },
   "contact": {
-    "methods": "Iletisim secenekleri",
+    "methods": "İletişim seçenekleri",
     "location": "Konum",
-    "unconfirmed": "Dogrudan iletisim bilgileri otel tarafindan teyit edildikten sonra paylasilacak.",
-    "mapUnavailable": "Harita bilgisi, kesin konum baglantisi teyit edildikten sonra eklenecek."
+    "unconfirmed": "Doğrudan iletişim bilgileri otel tarafından teyit edildikten sonra paylaşılacak.",
+    "mapUnavailable": "Harita bilgisi, kesin konum bağlantısı teyit edildikten sonra eklenecek."
   },
   "language": {
-    "turkish": "Turkce",
+    "turkish": "Türkçe",
     "english": "English",
-    "selectLanguage": "Dil secin"
+    "close": "Kapat",
+    "selectLanguage": "Dil seçin"
   }
 }

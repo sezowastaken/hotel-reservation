@@ -60,6 +60,11 @@ export type HomePageContent = {
   highlights: HighlightItem[];
   sections: PageSectionContent[];
   reservationCta: ReservationCtaContent;
+  finalCta: {
+    title: string;
+    description: string;
+    primaryCta: CtaLink;
+  };
 };
 
 export type RoomsPageContent = {

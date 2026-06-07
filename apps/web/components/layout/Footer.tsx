@@ -1,11 +1,31 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
-import { Link, navigationItems } from "@/lib/i18n/navigation";
+import { Link } from "@/lib/i18n/navigation";
+import type { PublicPathname } from "@/lib/i18n/config";
 import type { SiteSettings } from "@/lib/types/hotel";
 
 type FooterProps = {
   siteSettings: SiteSettings;
 };
+
+const stayLinks = [
+  { href: "/rooms", labelKey: "rooms" },
+  { href: "/gallery", labelKey: "gallery" },
+  { href: "/contact", labelKey: "contact" },
+] as const satisfies ReadonlyArray<{
+  href: PublicPathname;
+  labelKey: string;
+}>;
+
+const experienceLinks = [
+  { href: "/restaurant", labelKey: "restaurant" },
+  { href: "/marina", labelKey: "marina" },
+  { href: "/pool-bar", labelKey: "poolBar" },
+  { href: "/rooftop-terrace", labelKey: "rooftopTerrace" },
+] as const satisfies ReadonlyArray<{
+  href: PublicPathname;
+  labelKey: string;
+}>;
 
 export function Footer({ siteSettings }: FooterProps) {
   const footer = useTranslations("footer");
@@ -15,21 +35,23 @@ export function Footer({ siteSettings }: FooterProps) {
   );
 
   return (
-    <footer className="border-t border-stone-200 bg-stone-100">
-      <Container className="grid gap-8 py-10 text-sm text-stone-700 md:grid-cols-[1.4fr_1fr_1fr]">
+    <footer className="border-t border-[#123A32]/10 bg-[#123A32]">
+      <Container className="grid gap-8 py-12 text-sm text-[#EDE3D2] md:grid-cols-2 lg:grid-cols-[1.4fr_0.75fr_0.85fr_1fr]">
         <div>
-          <p className="font-semibold text-stone-950">{siteSettings.hotelName}</p>
+          <p className="font-display text-lg font-medium text-[#FFF8EC]">
+            {siteSettings.hotelName}
+          </p>
           <p className="mt-3 max-w-md leading-6">{footer("description")}</p>
         </div>
         <div>
-          <p className="font-medium text-stone-950">{footer("navigation")}</p>
+          <p className="font-medium text-[#FFF8EC]">{footer("stay")}</p>
           <nav
-            aria-label={footer("navigation")}
-            className="mt-3 grid grid-cols-2 gap-2 md:grid-cols-1"
+            aria-label={footer("stay")}
+            className="mt-3 grid gap-2"
           >
-            {navigationItems.map((item) => (
+            {stayLinks.map((item) => (
               <Link
-                className="hover:text-teal-800"
+                className="hover:text-[#F0B38D]"
                 href={item.href}
                 key={item.href}
               >
@@ -39,11 +61,30 @@ export function Footer({ siteSettings }: FooterProps) {
           </nav>
         </div>
         <div>
-          <p className="font-medium text-stone-950">{footer("contact")}</p>
+          <p className="font-medium text-[#FFF8EC]">
+            {footer("experiences")}
+          </p>
+          <nav
+            aria-label={footer("experiences")}
+            className="mt-3 grid gap-2"
+          >
+            {experienceLinks.map((item) => (
+              <Link
+                className="hover:text-[#F0B38D]"
+                href={item.href}
+                key={item.href}
+              >
+                {navigation(item.labelKey)}
+              </Link>
+            ))}
+          </nav>
+        </div>
+        <div>
+          <p className="font-medium text-[#FFF8EC]">{footer("contact")}</p>
           <div className="mt-3 space-y-2">
             {siteSettings.contact.phone ? (
               <a
-                className="block hover:text-teal-800"
+                className="block hover:text-[#F0B38D]"
                 href={`tel:${siteSettings.contact.phone}`}
               >
                 {siteSettings.contact.phone}
@@ -51,7 +92,7 @@ export function Footer({ siteSettings }: FooterProps) {
             ) : null}
             {siteSettings.contact.email ? (
               <a
-                className="block hover:text-teal-800"
+                className="block hover:text-[#F0B38D]"
                 href={`mailto:${siteSettings.contact.email}`}
               >
                 {siteSettings.contact.email}
@@ -59,7 +100,7 @@ export function Footer({ siteSettings }: FooterProps) {
             ) : null}
             {confirmedSocialLinks.map((link) => (
               <a
-                className="block capitalize hover:text-teal-800"
+                className="block capitalize hover:text-[#F0B38D]"
                 href={link.url ?? undefined}
                 key={link.platform}
                 rel="noreferrer"

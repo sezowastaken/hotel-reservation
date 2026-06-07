@@ -15,9 +15,9 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
   return (
     <section
       className={cn(
-        "relative isolate overflow-hidden bg-stone-900 text-white",
-        variant === "home" ? "min-h-[78vh]" : "min-h-[54vh]",
-        !hasImage && "bg-stone-100 text-stone-950",
+        "relative isolate overflow-hidden bg-[#123A32] text-white",
+        variant === "home" ? "min-h-[86vh]" : "min-h-[54vh]",
+        !hasImage && "bg-[#F4EBDC] text-[#252A27]",
       )}
     >
       {hero.image ? (
@@ -30,7 +30,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
             sizes="100vw"
             src={hero.image.src}
           />
-          <div className="absolute inset-0 bg-stone-950/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F2F2A]/86 via-[#123A32]/36 to-[#B96A4D]/16" />
         </>
       ) : null}
       <Container
@@ -39,12 +39,12 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
           !hasImage && "items-center",
         )}
       >
-        <div className="max-w-3xl pb-3">
+        <div className="max-w-3xl pb-6">
           {hero.eyebrow ? (
             <p
               className={cn(
-                "text-sm font-medium uppercase tracking-[0.18em]",
-                hasImage ? "text-teal-50" : "text-teal-800",
+                "text-sm font-medium",
+                hasImage ? "text-[#F4EBDC]" : "text-[#B96A4D]",
               )}
             >
               {hero.eyebrow}
@@ -52,7 +52,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
           ) : null}
           <h1
             className={cn(
-              "mt-4 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl",
+              "font-display mt-4 text-5xl font-medium leading-[0.98] sm:text-6xl lg:text-7xl",
               hasImage ? "text-white" : "text-stone-950",
             )}
           >
@@ -61,7 +61,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
           <p
             className={cn(
               "mt-5 max-w-2xl text-base leading-7 sm:text-lg sm:leading-8",
-              hasImage ? "text-stone-50" : "text-stone-700",
+              hasImage ? "text-[#F7F1E7]" : "text-[#343A36]",
             )}
           >
             {hero.subtitle}
@@ -73,6 +73,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
                   href={hero.primaryCta.href}
                   isExternal={hero.primaryCta.kind === "external"}
                   size="lg"
+                  variant={hasImage ? "secondary" : "primary"}
                 >
                   {hero.primaryCta.label}
                 </ButtonLink>
@@ -82,7 +83,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
                   href={hero.secondaryCta.href}
                   isExternal={hero.secondaryCta.kind === "external"}
                   size="lg"
-                  variant={hasImage ? "secondary" : "outline"}
+                  variant="secondary"
                 >
                   {hero.secondaryCta.label}
                 </ButtonLink>

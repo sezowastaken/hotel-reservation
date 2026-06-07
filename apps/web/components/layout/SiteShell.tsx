@@ -10,7 +10,7 @@ type SiteShellProps = {
 
 export function SiteShell({ children, siteSettings }: SiteShellProps) {
   return (
-    <div className="flex min-h-screen flex-col bg-stone-50 text-stone-950">
+    <div className="flex min-h-screen flex-col bg-[#F7F1E7] text-[#252A27]">
       <Header siteSettings={siteSettings} />
       <div className="flex-1">{children}</div>
       <Footer siteSettings={siteSettings} />
