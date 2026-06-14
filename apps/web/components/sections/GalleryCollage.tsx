@@ -22,10 +22,10 @@ export function GalleryCollage({
   const previewImages = images.slice(0, 5);
 
   return (
-    <section className="bg-[#EFE4D2] py-16 sm:py-20">
+    <section className="bg-[#EFE4D2] py-14 sm:py-16">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
+        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div className="lg:pt-4">
             <SectionHeader description={description} title={title} />
             {cta ? (
               <div className="mt-7">
@@ -46,9 +46,9 @@ export function GalleryCollage({
                   "relative overflow-hidden rounded-[1.35rem] bg-[#F7F1E7]",
                   index === 0
                     ? "col-span-2 aspect-[4/5] sm:col-span-3 sm:row-span-2"
-                    : "aspect-square sm:col-span-3",
-                  index === 3 && "sm:col-span-2",
-                  index === 4 && "sm:col-span-4",
+                    : "aspect-[4/3]",
+                  index === 1 && "sm:col-span-3",
+                  index > 1 && "sm:col-span-2",
                 )}
                 key={image.id}
               >
@@ -56,6 +56,7 @@ export function GalleryCollage({
                   alt={image.alt}
                   className="object-cover"
                   fill
+                  loading="eager"
                   sizes={
                     index === 0
                       ? "(min-width: 1024px) 35vw, 100vw"

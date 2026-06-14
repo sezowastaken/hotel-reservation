@@ -30,7 +30,7 @@ export const homePageContent: HomePageContent = {
   highlights: [
     {
       id: "boutique-scale",
-      title: "14 odalı butik ölçek",
+      title: "14 odalı konaklama",
       description:
         "Küçük ve sakin yapısı sayesinde daha rahat, sade ve samimi bir konaklama hissi verir.",
     },
@@ -51,7 +51,7 @@ export const homePageContent: HomePageContent = {
     {
       id: "story",
       eyebrow: "Palmiye'nin ritmi",
-      title: "Küçük ölçekli, sıcak ve denize yakın bir Marmaris hissi.",
+      title: "Sakin, sıcak ve denize yakın bir Marmaris hissi.",
       description:
         "Burada gün; marina tarafındaki hareket, restoranın sıcaklığı, havuz kenarındaki sakinlik ve terastan izlenen gün batımıyla yavaşça akar.",
       image: {

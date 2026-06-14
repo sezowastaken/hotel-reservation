@@ -14,6 +14,7 @@ export const pathnames = {
   "/pool-bar": "/pool-bar",
   "/rooftop-terrace": "/rooftop-terrace",
   "/gallery": "/gallery",
+  "/nearby": "/nearby",
   "/contact": "/contact",
 } as const;
 

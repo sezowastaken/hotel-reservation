@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Container } from "@/components/ui/Container";
 import { Link, navigationItems } from "@/lib/i18n/navigation";
 import type { SiteSettings } from "@/lib/types/hotel";
+import { cn } from "@/lib/utils/classNames";
 
 type HeaderProps = {
   siteSettings: SiteSettings;
@@ -17,9 +19,16 @@ export function Header({ siteSettings }: HeaderProps) {
         <div className="flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="font-display max-w-[13rem] text-base font-medium leading-tight text-[#123A32] sm:max-w-none sm:text-lg"
+            className="inline-flex shrink-0 items-center rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-[#C47A55] focus-visible:ring-offset-4"
           >
-            {siteSettings.hotelName}
+            <Image
+              alt={siteSettings.hotelName}
+              className="h-10 w-auto object-contain sm:h-11"
+              height={713}
+              priority
+              src="/images/logo/palmiye_logo.png"
+              width={1600}
+            />
           </Link>
           <div className="flex items-center gap-2 lg:hidden">
             <LanguageSwitcher />
@@ -47,13 +56,18 @@ export function Header({ siteSettings }: HeaderProps) {
         <div className="hidden items-center gap-5 lg:flex">
           <nav
             aria-label={navigation("primary")}
-            className="flex flex-wrap justify-end gap-x-5 gap-y-2 text-sm text-[#343A36]"
+            className="flex flex-wrap justify-end gap-x-6 gap-y-2 text-sm font-medium tracking-[0.02em] text-[#343A36]"
           >
             {navigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-sm outline-none hover:text-[#8F4E3B] focus-visible:ring-2 focus-visible:ring-[#C47A55] focus-visible:ring-offset-4"
+                className={cn(
+                  "relative rounded-sm pb-1 outline-none transition-colors duration-300",
+                  "after:absolute after:bottom-0 after:left-1/2 after:h-px after:w-full after:origin-center after:-translate-x-1/2 after:scale-x-0 after:bg-[#B96A4D] after:transition-transform after:duration-300",
+                  "hover:text-[#8F4E3B] hover:after:scale-x-100",
+                  "focus-visible:text-[#8F4E3B] focus-visible:ring-2 focus-visible:ring-[#C47A55] focus-visible:ring-offset-4 focus-visible:after:scale-x-100",
+                )}
               >
                 {navigation(item.labelKey)}
               </Link>

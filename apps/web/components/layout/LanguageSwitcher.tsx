@@ -46,7 +46,7 @@ export function LanguageSwitcher() {
       {isOpen ? (
         <div
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 p-4"
           role="dialog"
         >
           <button
@@ -55,7 +55,7 @@ export function LanguageSwitcher() {
             type="button"
             onClick={() => setIsOpen(false)}
           />
-          <div className="relative w-full max-w-sm rounded-2xl border border-[#123A32]/12 bg-[#F7F1E7] p-4 text-[#1F2421] shadow-[0_24px_80px_rgba(18,58,50,0.22)]">
+          <div className="fixed left-1/2 top-20 z-10 w-[min(24rem,calc(100vw-2rem))] -translate-x-1/2 rounded-2xl border border-[#123A32]/12 bg-[#F7F1E7] p-4 text-[#1F2421] shadow-[0_24px_80px_rgba(18,58,50,0.22)] sm:top-24">
             <div className="flex items-center justify-between gap-4">
               <p className="font-display text-xl font-medium text-[#123A32]">
                 {t("selectLanguage")}

@@ -54,10 +54,10 @@ export default async function ContactPage({ params }: ContactPageProps) {
         }}
         siteSettings={siteSettings}
       />
-      <ReservationCTA
+      {/* <ReservationCTA
         content={content.reservationCta}
         siteSettings={siteSettings}
-      />
+      /> */}
     </main>
   );
 }

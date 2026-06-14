@@ -58,7 +58,7 @@ export default async function RoomsPage({ params }: RoomsPageProps) {
         }}
         room={room}
       />
-      <GalleryPreviewSection
+      {/* <GalleryPreviewSection
         cta={room.cta}
         description={room.shortDescription}
         images={roomImages}
@@ -72,7 +72,7 @@ export default async function RoomsPage({ params }: RoomsPageProps) {
           whatsappMessage: siteSettings.reservation.defaultWhatsappMessage,
         }}
         siteSettings={siteSettings}
-      />
+      /> */}
     </main>
   );
 }

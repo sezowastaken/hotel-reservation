@@ -73,7 +73,7 @@ export function HeroSection({ hero, variant = "page" }: HeroSectionProps) {
                   href={hero.primaryCta.href}
                   isExternal={hero.primaryCta.kind === "external"}
                   size="lg"
-                  variant={hasImage ? "secondary" : "primary"}
+                  variant="primary"
                 >
                   {hero.primaryCta.label}
                 </ButtonLink>

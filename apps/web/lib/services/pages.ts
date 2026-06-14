@@ -1,11 +1,14 @@
 import { contactPageContent as enContactPageContent } from "@/content/en/contact";
 import { galleryPageContent as enGalleryPageContent } from "@/content/en/gallery";
 import { homePageContent as enHomePageContent } from "@/content/en/home";
+import { nearbySectionContent as enNearbySectionContent } from "@/content/en/nearby";
 import { roomsPageContent as enRoomsPageContent } from "@/content/en/rooms";
 import { contactPageContent as trContactPageContent } from "@/content/tr/contact";
 import { galleryPageContent as trGalleryPageContent } from "@/content/tr/gallery";
 import { homePageContent as trHomePageContent } from "@/content/tr/home";
+import { nearbySectionContent as trNearbySectionContent } from "@/content/tr/nearby";
 import { roomsPageContent as trRoomsPageContent } from "@/content/tr/rooms";
+import type { NearbySectionContent } from "@/components/sections/NearbySection";
 import type { Locale } from "@/lib/i18n/config";
 import type {
   ContactPageContent,
@@ -35,6 +38,11 @@ const galleryPageContentByLocale: LocaleContentMap<GalleryPageContent> = {
   en: enGalleryPageContent,
 };
 
+const nearbySectionContentByLocale: LocaleContentMap<NearbySectionContent> = {
+  tr: trNearbySectionContent,
+  en: enNearbySectionContent,
+};
+
 export async function getHomePageContent(
   locale: Locale,
 ): Promise<HomePageContent> {
@@ -57,4 +65,10 @@ export async function getGalleryPageContent(
   locale: Locale,
 ): Promise<GalleryPageContent> {
   return galleryPageContentByLocale[locale];
+}
+
+export async function getNearbySectionContent(
+  locale: Locale,
+): Promise<NearbySectionContent> {
+  return nearbySectionContentByLocale[locale];
 }
