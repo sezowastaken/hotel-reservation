@@ -10,6 +10,11 @@ import "../globals.css";
 export const metadata: Metadata = {
   title: "Palmiye Nature Hotel & Yacht Club",
   description: "Multilingual promotional website foundation.",
+  icons: {
+    icon: "/images/logo/palmiye_logo_rounded.png",
+    shortcut: "/images/logo/palmiye_logo_rounded.png",
+    apple: "/images/logo/palmiye_logo_rounded.png",
+  },
 };
 
 type LocaleLayoutProps = {
