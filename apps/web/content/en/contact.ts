@@ -13,31 +13,31 @@ export const contactPageContent: ContactPageContent = {
       "For availability, reservation and location details, direct contact with the hotel is the clearest path.",
     primaryCta: {
       label: "Book via WhatsApp",
-      href: "/contact",
-      kind: "internal",
+      href: "https://wa.me/905064645591",
+      kind: "external",
     },
   },
   methods: [
     {
       id: "whatsapp",
       label: "WhatsApp",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "+90 506 464 55 91",
+      href: "https://wa.me/905064645591",
+      needsOwnerConfirmation: false,
     },
     {
       id: "phone",
       label: "Phone",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "+90 506 464 55 91",
+      href: "tel:+905064645591",
+      needsOwnerConfirmation: false,
     },
     {
       id: "email",
       label: "Email",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "info@palmiyenature.com",
+      href: "mailto:info@palmiyenature.com",
+      needsOwnerConfirmation: false,
     },
   ],
   location: {
@@ -57,8 +57,8 @@ export const contactPageContent: ContactPageContent = {
       "Share your dates and guest count to request reservation information directly from the hotel.",
     primaryCta: {
       label: "Ask Availability",
-      href: "/contact",
-      kind: "internal",
+      href: "https://wa.me/905064645591",
+      kind: "external",
     },
     whatsappMessage:
       "Hello, I would like to get availability and reservation information for Palmiye Nature Hotel & Yacht Club.",

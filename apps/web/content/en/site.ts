@@ -13,10 +13,10 @@ export const siteSettings: SiteSettings = {
   supportedLocales: locales,
   publicRoomCount: PUBLIC_ROOM_COUNT,
   contact: {
-    phone: null,
-    email: null,
-    whatsappNumber: null,
-    needsOwnerConfirmation: true,
+    phone: "+90 506 464 55 91",
+    email: "info@palmiyenature.com",
+    whatsappNumber: "905064645591",
+    needsOwnerConfirmation: false,
   },
   socialLinks: [
     {

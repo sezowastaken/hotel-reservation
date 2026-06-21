@@ -13,31 +13,31 @@ export const contactPageContent: ContactPageContent = {
       "Musaitlik, rezervasyon ve konum bilgileri icin en net yol dogrudan otel ile iletisim kurmaktir.",
     primaryCta: {
       label: "WhatsApp ile Rezervasyon",
-      href: "/contact",
-      kind: "internal",
+      href: "https://wa.me/905064645591",
+      kind: "external",
     },
   },
   methods: [
     {
       id: "whatsapp",
       label: "WhatsApp",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "+90 506 464 55 91",
+      href: "https://wa.me/905064645591",
+      needsOwnerConfirmation: false,
     },
     {
       id: "phone",
       label: "Telefon",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "+90 506 464 55 91",
+      href: "tel:+905064645591",
+      needsOwnerConfirmation: false,
     },
     {
       id: "email",
       label: "E-posta",
-      value: null,
-      href: null,
-      needsOwnerConfirmation: true,
+      value: "info@palmiyenature.com",
+      href: "mailto:info@palmiyenature.com",
+      needsOwnerConfirmation: false,
     },
   ],
   location: {
@@ -57,8 +57,8 @@ export const contactPageContent: ContactPageContent = {
       "Tarihlerini ve kisi sayisini paylasarak otelden dogrudan rezervasyon bilgisi isteyebilirsin.",
     primaryCta: {
       label: "Musaitlik Sor",
-      href: "/contact",
-      kind: "internal",
+      href: "https://wa.me/905064645591",
+      kind: "external",
     },
     whatsappMessage:
       "Merhaba, Palmiye Nature Hotel & Yacht Club icin musaitlik ve rezervasyon bilgisi almak istiyorum.",

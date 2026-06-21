@@ -85,7 +85,7 @@ export function Footer({ siteSettings }: FooterProps) {
             {siteSettings.contact.phone ? (
               <a
                 className="block hover:text-[#F0B38D]"
-                href={`tel:${siteSettings.contact.phone}`}
+                href={`tel:${siteSettings.contact.phone.replace(/\s/g, "")}`}
               >
                 {siteSettings.contact.phone}
               </a>
